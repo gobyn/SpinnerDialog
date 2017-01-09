@@ -44,6 +44,8 @@ public class EniProgressDialog extends ProgressDialog {
 			animation.addFrame(draw, 50);
 		}
 		imageView.setBackground(animation);
+	    	imageView.isOpaque(true);
+		imageView.setBackgroundColor(Color.parseColor("#80000000"));
 		layout.addView(imageView);
 		setContentView(layout);
 

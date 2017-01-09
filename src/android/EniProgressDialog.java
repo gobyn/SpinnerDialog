@@ -36,7 +36,6 @@ public class EniProgressDialog extends ProgressDialog {
 		String package_name = context.getPackageName();
 		Resources resources = context.getResources();
 		LinearLayout layout = new LinearLayout(context);
-	    	layout.setBackgroundColor(Color.parseColor("#ffb5d6e1"));
 		ImageView imageView = new ImageView(context);
 		animation = new AnimationDrawable();
 		animation.setOneShot(false);

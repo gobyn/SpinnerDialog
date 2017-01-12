@@ -17,6 +17,7 @@ import android.os.Bundle;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.widget.LinearLayout;
+import android.widget.LinearLayout.LayoutParams;
 
 import android.content.res.Resources;
 public class EniProgressDialog extends ProgressDialog {

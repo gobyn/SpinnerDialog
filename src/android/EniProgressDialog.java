@@ -19,6 +19,9 @@ import android.graphics.drawable.Drawable;
 import android.widget.LinearLayout;
 
 import android.content.res.Resources;
+
+import android.view.Gravity;
+
 public class EniProgressDialog extends ProgressDialog {
 
 	private AnimationDrawable animation;

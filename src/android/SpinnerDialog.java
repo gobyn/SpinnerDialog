@@ -1,4 +1,4 @@
-	package hu.dpal.phonegap.plugins;
+package hu.dpal.phonegap.plugins;
 
 import java.util.Stack;
 
@@ -9,6 +9,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import android.content.DialogInterface;
+
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 
 public class SpinnerDialog extends CordovaPlugin {
 
@@ -30,6 +33,7 @@ public class SpinnerDialog extends CordovaPlugin {
 			Runnable runnable = new Runnable() {
 				public void run() {
 					EniProgressDialog dialog = new EniProgressDialog(cordova.getActivity());
+					dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 					dialog.show();
 					SpinnerDialog.this.spinnerDialogStack.push(dialog);
 

@@ -37,6 +37,11 @@ public class EniProgressDialog extends ProgressDialog {
 		Resources resources = context.getResources();
 		LinearLayout layout = new LinearLayout(context);
 		ImageView imageView = new ImageView(context);
+	    	
+	    	LayoutParams lp = new LayoutParams();
+   		lp.gravity= Gravity.CENTER_HORIZONTAL; 
+		imageView.setLayoutParams(lp);
+	    
 		animation = new AnimationDrawable();
 		animation.setOneShot(false);
 		for(int i=1;i<=12;i++){
